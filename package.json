@@ -4,8 +4,16 @@
   "description": "juce project",
   "main": "index.js",
   "scripts": {
+    "start": "index.js",
+    "watch": "nodemon --watch index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kryvosheienko Yulia",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }

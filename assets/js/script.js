@@ -19,7 +19,7 @@ $(document).ready(function () {
         if (agree_checked) {
             $.post('https://client.juce.cloud/contact-us', {'email': email, 'message': message}, function(res) {
                 if (res == "ok") {
-                    document.location.href = '../../src/thank-you-for-contact-us.html'
+                    document.location.href = '../../thank-you-for-contact-us.html'
                 } else {
                     // Error
                 }
