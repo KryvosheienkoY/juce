@@ -30,3 +30,10 @@ app.get('/thank-you-for-contact-us', (req, res) => {
 app.get('/why-juce', (req, res) => {
     res.sendFile((__dirname + '/why-juce.html'));
 });
+
+app.get('/login', (req, res) => {
+    res.sendFile((__dirname + '/login.html'));
+});
+app.get('/sign_up', (req, res) => {
+    res.sendFile((__dirname + '/sign_up.html'));
+});

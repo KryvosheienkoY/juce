@@ -120,7 +120,7 @@ function updateComparison()
 
 function switchPlan(plan)
 {
-    if (currentPlan != plan)
+    if (currentPlan !== plan)
     {
         updateSlider(document.getElementById("storage"), sliderInfo[plan]["storage"]);
         updateSlider(document.getElementById("transfer"), sliderInfo[plan]["transfer"]);

@@ -43,8 +43,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*.hamburger {*/
-    /*display: none;*/
-    /*cursor: pointer;*/
+/*display: none;*/
+/*cursor: pointer;*/
 /*}*/
 
 .logo_mob {
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0;
     max-width: max-content !important;
     padding-left: 0;
-    padding-right: 0!important;
+    padding-right: 0 !important;
     color: #fff;
 }
 
@@ -116,7 +116,6 @@ h1, h2, h3, h4, h5, h6 {
 .footer_conditions a {
     margin: 0 0 0 5px;
 }
-
 
 .header nav {
     width: 100%;
@@ -532,6 +531,10 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 950px;
     margin: 10px auto;
     color: #282932;
+}
+
+#diagram {
+    overflow-anchor: none;
 }
 
 /***************** /Comparison styles *******************/
@@ -1180,7 +1183,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form {
-    margin-top: 7%;
+    margin-top: 1%;
 }
 
 .form_title {
@@ -1351,9 +1354,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     /*.free_trial_main {*/
-        /*top: 38%*/
+    /*top: 38%*/
     /*}*/
-
     .registration_server {
         width: 600px;
     }
@@ -1389,9 +1391,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     /*.free_trial_main {*/
-        /*top: 32%*/
+    /*top: 32%*/
     /*}*/
-
     .exactbill {
         right: -2%;
     }
@@ -1457,7 +1458,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .form {
-        margin-top: 10%;
         margin-right: 50px;
     }
 
@@ -1615,11 +1615,10 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     /*.hamburger {*/
-        /*display: unset;*/
-        /*position: absolute;*/
-        /*left: 52px;*/
+    /*display: unset;*/
+    /*position: absolute;*/
+    /*left: 52px;*/
     /*}*/
-
     /*#privacy_policy .hamburger,*/
     /*#terms_and_conditions .hamburger,*/
     /*#coming_soon .hamburger,*/
