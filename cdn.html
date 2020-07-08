@@ -1,99 +1,129 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-TCW2H77');</script>
-	<!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TCW2H77');</script>
+    <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="robots" content="index, follow"/>
     <title>Partial solution through CDN</title>
     <meta name="description" content="geographically distributed storage, CDN, content delivery network">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 </head>
 
 <body id="privacy_policy">
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCW2H77"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCW2H77"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <header id="header" class="row header">
-    <div class="logo">
-        <a href="https://juce.cloud/"><img class="logo_desc" src="assets/images/logo.svg" alt="Juce"></a>
-        <a href="https://juce.cloud/"><img class="logo_mob" src="assets/images/logo_white.svg" alt="Juce"></a>
-    </div>
-    <img class="hamburger inactive" src="assets/images/hamburger.svg">
-    <div class="nav">
-        <a href="https://juce.cloud/">Homepage</a>
-        <a href="https://juce.cloud/#prices">Prices</a>
-        <a href="https://juce.cloud/#about_us">About JUCE</a>
-        <a href="#contact_modal" data-toggle="modal">Contact Us</a>
-        <div class="login_block login_block_desc">
-            <div class="login">
-                <img src="assets/images/login_icon.svg">
-                <a href="https://client.juce.cloud/" class="login_text">Log in</a>
-            </div>
-            <div class="sign_up">
-                <img src="assets/images/sign_icon.svg">
-                <a href="https://client.juce.cloud/auth/registration" class="login_text">Sign up</a>
-            </div>
+    <nav class="navbar navbar-expand-lg row">
+        <div class="col-lg-1 logo">
+            <a href="https://juce.cloud/"><img class="logo_desc" src="assets/images/logo.svg" alt="Juce"></a>
+            <a href="https://juce.cloud/"><img class="logo_mob" src="assets/images/logo_white.svg" alt="Juce"></a>
         </div>
-    </div>
-    <div class="modal fade" id="contact_modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="container">
-                            <h1 class="form_title">Contact form</h1>
-                            <label for="contact_email">Email:</label>
-                            <p><input type="text" id="contact_email" name="contact_email" required></p>
+        <button class=" navbar-light navbar-toggler order-first" type="button" data-toggle="collapse"
+                data-target="#navbarTop"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                            <label for="contact_message">Message:</label>
-                            <p><textarea id="contact_message" name="contact_message" required></textarea>
-                            </p>
-                            <p><input type="checkbox" name="contact" required> I agree to JUCE's <a
-                                    href="privacy-policy.html" target="_blank">Privacy Policy</a> and <a
-                                    href="terms-and-conditions.html" target="_blank">Terms and
-                                Conditions</a></p>
-                            <p class="form_p"><a class="login_button" href="#">Contact us!</a>
-                            </p>
-                        </div>
-                    </form>
+        <div class="col-lg-8 collapse navbar-collapse" id="navbarTop">
+            <ul class=" navbar-nav nav linkNavUl">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://juce.cloud/">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://juce.cloud/#prices">Prices</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://juce.cloud/#about_us">About JUCE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact_modal" data-toggle="modal">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <ul class=" col-lg-3 navbar-nav login_block login_block_desc nav">
+            <li>
+                <div class="login">
+                    <img src="assets/images/login_icon.svg">
+                    <a class="nav-link" href="https://client.juce.cloud/" class="login_text">Log in</a>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="login_block login_block_mob">
-        <div class="login">
-            <img src="assets/images/login_icon.svg">
-            <a href="https://client.juce.cloud/" class="login_text">Log in</a>
-        </div>
-        <div class="sign_up">
-            <img src="assets/images/sign_icon.svg">
-            <a href="https://client.juce.cloud/auth/registration" class="login_text">Sign up</a>
-        </div>
-    </div>
+            </li>
+            <li>
+                <div class="sign_up">
+                    <img src="assets/images/sign_icon.svg">
+                    <a class="nav-link" href="https://client.juce.cloud/auth/registration" class="login_text">Sign
+                        up</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
     <img class="header_bg" src="assets/images/terms_bg.svg">
     <img class="header_bg_mob" src="assets/images/header_image_mob.svg">
 </header>
+
+
+<!-- modal chat window -->
+<div class="modal fade" id="contact_modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="container">
+                        <h1 class="form_title">Contact form</h1>
+                        <label for="contact_email">Email:</label>
+                        <p><input type="text" id="contact_email" name="contact_email" required></p>
+
+                        <label for="contact_message">Message:</label>
+                        <p><textarea id="contact_message" name="contact_message" required></textarea>
+                        </p>
+                        <p><input type="checkbox" name="contact" required> I agree to JUCE's <a
+                                href="privacy-policy.html" target="_blank">Privacy Policy</a> and <a
+                                href="terms-and-conditions.html" target="_blank">Terms and
+                            Conditions</a></p>
+                        <p class="form_p"><a class="login_button" href="#">Contact us!</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="container privacy_content">
     <div class="row privacy cdn">
@@ -121,7 +151,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
         <div class="row">
             <div class="col-3 footer_login">
-                <a href="https://juce.cloud/"><img class="footer_logo" src="assets/images/footer_logo.svg" alt="Juce"></a>
+                <a href="https://juce.cloud/"><img class="footer_logo" src="assets/images/footer_logo.svg"
+                                                   alt="Juce"></a>
                 <div>
                     <div class="login">
                         <img src="assets/images/login_icon.svg">
@@ -172,6 +203,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <img class="ellipse footer_ellipse_3" src="assets/images/footer_ellipse_3.svg">
 </footer>
 
-<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'f149cdc1-abb5-412a-ab9a-49459a552418', f: true }); done = true; } }; })();</script>
+<script type='text/javascript' data-cfasync='false'>window.purechatApi = {
+    l: [], t: [], on: function () {
+        this.l.push(arguments);
+    }
+};
+(function () {
+    var done = false;
+    var script = document.createElement('script');
+    script.async = true;
+    script.type = 'text/javascript';
+    script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';
+    document.getElementsByTagName('HEAD').item(0).appendChild(script);
+    script.onreadystatechange = script.onload = function (e) {
+        if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
+            var w = new PCWidget({c: 'f149cdc1-abb5-412a-ab9a-49459a552418', f: true});
+            done = true;
+        }
+    };
+})();</script>
 
 </body>

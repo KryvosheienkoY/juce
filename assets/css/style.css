@@ -1082,6 +1082,8 @@ h1, h2, h3, h4, h5, h6 {
     display: inherit;
     position: unset;
     flex-direction: row;
+    min-width: max-content;
+    padding: 20px;
 }
 
 .thank_you_page .nav a {
@@ -1922,7 +1924,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .thank_you_page .logo {
-        position: unset;
+        position: unset !important;
+        margin-top: auto;
     }
 
     .thank_you_block {
