@@ -1,21 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TCW2H77');</script>
-    <!-- End Google Tag Manager -->
+
 
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -75,13 +61,13 @@
             <li>
                 <div class="login">
                     <img src="assets/images/login_icon.svg">
-                    <a class="nav-link" href="https://client.juce.cloud/" class="login_text">Log in</a>
+                    <a class="nav-link login_text" href="https://client.juce.cloud/" >Log in</a>
                 </div>
             </li>
             <li>
                 <div class="sign_up">
                     <img src="assets/images/sign_icon.svg">
-                    <a class="nav-link" href="https://client.juce.cloud/auth/registration" class="login_text">Sign
+                   <a class="nav-link login_text" href="https://client.juce.cloud/auth/registration" >Sign
                         up</a>
                 </div>
             </li>
@@ -92,7 +78,7 @@
 </header>
 
 
-<!-- modal chat window -->
+<!-- modal contact us window -->
 <div class="modal fade" id="contact_modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -106,7 +92,7 @@
                     <div class="container">
                         <h1 class="form_title">Contact form</h1>
                         <label for="contact_email">Email:</label>
-                        <p><input type="text" id="contact_email" name="contact_email" required></p>
+                        <p><input type="email" id="contact_email" name="contact_email" required></p>
 
                         <label for="contact_message">Message:</label>
                         <p><textarea id="contact_message" name="contact_message" required></textarea>
@@ -203,24 +189,6 @@
     <img class="ellipse footer_ellipse_3" src="assets/images/footer_ellipse_3.svg">
 </footer>
 
-<!--<script type='text/javascript' data-cfasync='false'>window.purechatApi = {
-    l: [], t: [], on: function () {
-        this.l.push(arguments);
-    }
-};
-(function () {
-    var done = false;
-    var script = document.createElement('script');
-    script.async = true;
-    script.type = 'text/javascript';
-    script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';
-    document.getElementsByTagName('HEAD').item(0).appendChild(script);
-    script.onreadystatechange = script.onload = function (e) {
-        if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
-            var w = new PCWidget({c: 'f149cdc1-abb5-412a-ab9a-49459a552418', f: true});
-            done = true;
-        }
-    };
-})();</script>-->
+
 
 </body>

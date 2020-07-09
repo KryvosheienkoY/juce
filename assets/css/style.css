@@ -818,6 +818,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .modal-body input[type="text"],
+.modal-body input[type="email"],
 .modal-body textarea {
     padding: 10px 20px;
     height: 35px;
@@ -826,6 +827,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px;
     box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
     border-radius: 53px;
+    -webkit-appearance: none;
 }
 
 .modal-body textarea {
@@ -1605,6 +1607,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .nav a {
         font-size: 16px;
+        color: #D23E50;
     }
 
     .registration .row .nav,
@@ -2173,6 +2176,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .modal-body input[type="text"],
+    .modal-body input[type="email"],
     .modal-body textarea,
     .registration input[type="text"],
     .registration input[type="password"],
