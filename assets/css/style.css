@@ -1172,9 +1172,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .registration_bg img {
     max-width: 100%;
-    height: 120%;
-    /*position: absolute;*/
-    /*top: -20%;*/
+    height: 112%;
 }
 
 .registration .logo {
