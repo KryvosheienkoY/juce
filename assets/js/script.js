@@ -1,13 +1,4 @@
 $(document).ready(function () {
-    $(document).on('click', '.hamburger', function () {
-        if ($(this).hasClass("inactive")) {
-            $(this).addClass("active").removeClass("inactive");
-            $(".nav").css('display', 'flex');
-        } else {
-            $(this).addClass("inactive").removeClass("active");
-            $(".nav").css('display', 'none');
-        }
-    });
 
     $("#contact_modal form a.login_button").click(function(e) {
         e.preventDefault();
@@ -29,4 +20,27 @@ $(document).ready(function () {
             // He didn't offer friendship. He didn't even think to call me Godfather.
         }
     });
+
+    addChat();
 });
+function addChat() {
+    window.purechatApi = {
+        l: [], t: [], on: function () {
+            this.l.push(arguments);
+        }
+    };
+    (function () {
+        var done = false;
+        var script = document.createElement('script');
+        script.async = true;
+        script.type = 'text/javascript';
+        script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';
+        document.getElementsByTagName('HEAD').item(0).appendChild(script);
+        script.onreadystatechange = script.onload = function (e) {
+            if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
+                var w = new PCWidget({c: 'f149cdc1-abb5-412a-ab9a-49459a552418', f: true});
+                done = true;
+            }
+        };
+    })();
+}
